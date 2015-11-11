@@ -78,7 +78,29 @@
 			document.write("Math.sqrt(1000) = ", Math.sqrt(1000), "<br/>");
 
 
+			document.write("<b>Type conversions: </b> <br />");
+			document.write("Convert Number to String: ", Number(3.14), "<br ?>");
+			document.write("Convert String to Number: ", parseInt("5"), "<br />");
+			document.write("Converted String to Float: ", parseFloat("5.14"), "<br />");
 			document.write("</p>");
+
+			document.write("<p>");
+			document.write("<b>String Manipulation: </b> <br />");
+			var randStr = "A long " + "String!!!";
+
+			document.write("String length: ", randStr.length, "<br />");
+			document.write("Index of \"String\": ", randStr.indexOf("String"), "<br />");
+			document.write("randStr.slice(7, 13) //Slice only between 7-23: ", randStr.slice(7, 13), "<br />");
+			document.write("randStr.slice(7) //Slice from 7 to the end of String: ", randStr.slice(7), "<br />");
+
+			document.write("randStr.substr(7, 6) //Get 6 characters after '7' of String: ", randStr.substr(7, 6), "<br />");
+			document.write("Replace substring: ", randStr.replace("A long", "A VEERY LONG"), "<br />");
+			document.write("Get Char at Index 2 : ", randStr.split(" "), "<br />");
+			document.write("Split String to Array based on ' ' character : ", randStr.split(" "), "<br />");
+			document.write("Convert string to upper case : ", randStr.toUpperCase(), "<br />");
+			document.write("Convert string to lower case : ", randStr.toLowerCase(), "<br />");
+			document.write("<p />");
+
 			
 			// Commenting out the popup box as it is very annoying~
 			// var yourName = prompt("What is your name?");

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<!-- <script type="text/javascript" src="jstut.js"></script> -->
+		<script type="text/javascript" src="jstest.js"></script>
 		<style type="text/css">
 			body {font-size: 1.6em;}
 			.hidden {display: none;}
@@ -14,12 +14,75 @@
 				margin-top: .4em;
 			}
 		</style>
-
 	</head>
 	<body>
+
 		<p id="sayHello"></p>
+
+		<p id="jsData"></p>
+		
+
 		<script type="text/javascript">
-			var yourName = prompt("What is your name?");
+			var myName = "John";
+			var myAge = 30;
+			myName = 34; // an integer can be set to myName variable now.
+			document.write("<p>");
+			document.write("<b>Mathematical functions and concatenation: </b><br />");
+			document.write("5 + 4 = ", 5 + 4, "<br />");
+			document.write("5 + 4 = " +  5 + 4, "<br />");
+			document.write("5 * 4 = ",  5 * 4, "<br />");
+			document.write("5 - 4 = ",  5 - 4, "<br />");
+			document.write("5 / 4 = ",  5 / 4, "<br />");
+			document.write("5 % 4 = ",  5 % 4, "<br />");
+
+			document.write("Max value: ", Number.MAX_VALUE, "<br />");
+			document.write("Min value: ", Number.MIN_VALUE, "<br />");
+			document.write("</p>");
+
+			document.write("<p>");
+			document.write("<b>Mathematical precision: </b><br />");
+			var precisionTest16digits = 0.1000000000000001;
+			document.write("Addition with 16 digits: ", precisionTest16digits + 0.1000000000000001, "</br>");
+
+			var precisionTest17digits = 0.10000000000000001;
+			document.write("Addition with 17 digits: ", precisionTest17digits + 0.10000000000000001, "</br>");
+
+			document.write("Without fixed number of decimal places eg.: ", (precisionTest16digits), "<br />");
+			document.write("Setting fixed decimal places using .toFixed eg.: ", (precisionTest16digits.toFixed(2)), "<br />");
+			
+			var randNum = 5;
+			document.write("randNum++ (post increment) = ", randNum++, "<br />");
+			document.write("++randNum (pre increment) = ", ++randNum, "<br />");
+			document.write("<b>Add a number to a variable and store it back to the same variable. </b> <br />");
+			document.write("randNum += 5 = ", randNum += 5, "<br />");
+
+			document.write("<b>Order of operation. </b> <br />");
+			document.write("3 + 2 * 5 = " , 3 + 2 * 5, "<br />");
+			document.write("(3 + 2) * 5 = " , (3 + 2) * 5, "<br />");
+
+			document.write("<b>Built in constants. </b> <br />");
+			document.write("Math.E ", Math.E, "<br />");
+			document.write("Math.PI ", Math.PI, "<br />");
+
+			document.write("<b>Other Math Functions: </b> <br />");
+			document.write("Math.abs(-8) = ", Math.abs(-8), "<br/>");
+			document.write("Math.cbrt(1000) = ", Math.cbrt(1000), "<br/>");
+			document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br/>");
+			document.write("Math.floor(6.45) = ", Math.floor(6.45), "<br/>");
+			document.write("Math.round(6.45) = ", Math.round(6.45), "<br/>");
+			document.write("Math.log(10) = ", Math.log(10), "<br/>"); // Natural log
+			document.write("Math.log10(10) = ", Math.log10(10), "<br/>"); // Base 10 log
+			document.write("Math.max(10,5) = ", Math.max(10,5), "<br/>");
+			document.write("Math.min(10,5) = ", Math.min(10,5), "<br/>");
+			document.write("Math.pow(4,2) = ", Math.pow(4,2), "<br/>");
+			document.write("Math.sqrt(1000) = ", Math.sqrt(1000), "<br/>");
+
+
+			document.write("</p>");
+			
+			// Commenting out the popup box as it is very annoying~
+			// var yourName = prompt("What is your name?");
+			var yourName = "User";
 			if (yourName != null) {
 				document.getElementById("sayHello").innerHTML = "Hello " + yourName;
 

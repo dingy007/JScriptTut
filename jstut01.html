@@ -23,6 +23,8 @@
 		
 
 		<script type="text/javascript">
+			document.write("Learning JS from Derek Banas's video");
+			document.write("https://www.youtube.com/watch?v=fju9ii8YsGs");
 			var myName = "John";
 			var myAge = 30;
 			myName = 34; // an integer can be set to myName variable now.
@@ -97,11 +99,29 @@
 			document.write("Replace substring: ", randStr.replace("A long", "A VEERY LONG"), "<br />");
 			document.write("Get Char at Index 2 : ", randStr.split(" "), "<br />");
 			document.write("Split String to Array based on ' ' character : ", randStr.split(" "), "<br />");
+			document.write("Trim white space: ", randStr.trim());
 			document.write("Convert string to upper case : ", randStr.toUpperCase(), "<br />");
 			document.write("Convert string to lower case : ", randStr.toLowerCase(), "<br />");
 			document.write("<p />");
 
-			
+			document.write("<p>");
+			document.write("<b>String Styling: </b> <br />");
+			var strToStyle = "Random String";
+			document.write("Big tag: ", strToStyle.big(), "<br />");
+			document.write("Bold tag: ", strToStyle.bold(), "<br />");
+			document.write("Font Color tag: ", strToStyle.fontcolor("blue"), "<br />");
+			document.write("Font size tag: ", strToStyle.fontsize("8em"), "<br />");
+			document.write("Italics tag: ", strToStyle.italics(), "<br />");
+			document.write("URL Link tag: ", strToStyle.link("http://www.google.com"), "<br />");
+			document.write("Small tag: ", strToStyle.small(), "<br />");
+			document.write("Strike tag: ", strToStyle.strike(), "<br />");
+			document.write("Sub tag: ", strToStyle.sub(), "<br />");
+			document.write("Sup tag: ", strToStyle.sup(), "<br />");
+			document.write("<p />");
+
+
+
+
 			// Commenting out the popup box as it is very annoying~
 			// var yourName = prompt("What is your name?");
 			var yourName = "User";
